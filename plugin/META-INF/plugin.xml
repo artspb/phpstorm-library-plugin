@@ -1,0 +1,27 @@
+<idea-plugin version="2">
+  <id>me.artpsb.idea.plugin.library</id>
+  <name>Library</name>
+  <version>0.1</version>
+  <vendor email="contact@artspb.me" url="https://artspb.me">Artem Khvastunov</vendor>
+
+  <description><![CDATA[
+    Provides support of the Library.
+  ]]></description>
+
+  <change-notes><![CDATA[
+    <h3>0.1</h3>
+    <ul>
+      <li>Initial support.</li>
+    </ul>
+  ]]>
+  </change-notes>
+
+  <idea-version since-build="163.3984"/>
+
+  <depends>com.intellij.modules.platform</depends>
+  <depends>com.jetbrains.php</depends>
+
+  <extensions defaultExtensionNs="com.jetbrains.php">
+    <libraryRoot id="library" path="/library/" runtime="false"/>
+  </extensions>
+</idea-plugin>
