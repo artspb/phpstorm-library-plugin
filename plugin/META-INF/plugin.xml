@@ -1,7 +1,7 @@
 <idea-plugin version="2">
   <id>me.artpsb.idea.plugin.library</id>
   <name>Library</name>
-  <version>0.1</version>
+  <version>0.2</version>
   <vendor email="contact@artspb.me" url="https://artspb.me">Artem Khvastunov</vendor>
 
   <description><![CDATA[
@@ -9,6 +9,10 @@
   ]]></description>
 
   <change-notes><![CDATA[
+    <h3>0.2</h3>
+    <ul>
+      <li>Release upload test.</li>
+    </ul>
     <h3>0.1</h3>
     <ul>
       <li>Initial support.</li>
