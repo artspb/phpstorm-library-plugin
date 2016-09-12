@@ -1,0 +1,12 @@
+language: generic
+script:
+- cd plugin/
+- zip -r phpstorm-library-plugin-$TRAVIS_TAG.jar *
+deploy:
+  provider: releases
+  api_key:
+    secure: Mql3VaHsodx3ohlo553lgXHO4ZlKcroFiiBU0rUt/9LCBdhThC84jkddObQYhXgrH+AotEHFq4CvpixV1BoZP7TuJIALjIBxu2a1RNcqweeVLP+ggADKgFKmGh+Z4jlMlYYfbqcllb/Lprdexv215AhP/r2Bwy1GsfYHOAnhdKLI7ifI0yAhA7d2GKHx0TcClBxWjT5lJBmd8Xmj9Cco2X0mHPaA2WJKvHrqFCnzW865w3YNVJ0QSDnKOqGmV5wflPO6i1p5WrY8o2Vr+qJz5mEJcVecMQbKk9AaZ4fSV4NNebbwOgPH814eRLZX9ERsTl8T9juwbGk3WF+sK09uQ0iFR7ZY5s6Orzl4f+EdvFtqPBYgtWmY2zW6zpAth17Et8gBV1m7fEBUg7jCcQ1I/gUE2ZFCODk+B6YsIEYx1ilfhSGVilFmSkWmMzDV17WtZhFTXhwgMW0s8YH2puqWTgvav1K4clT8Yb8HwLE/fvdAyqp7lYBnOvXK+5UxngxjGmCv4ynBqtTgFXS6qjwANZzwvx/aZdKYtZ+4I/7SFoh93MQbgl/e/IxIJrDvxMYZ9vlhgNRhj8H5vjv6jeZ9uQ3S9ld9eRwEaTijvDxNNl6aAgkIVakWay5bzGmRWAPCl51VRtZCqVBkh/SSTsOPLiQxmHo9RBOvLejZrl2jUSA=
+  file: phpstorm-library-plugin-$TRAVIS_TAG.jar
+  skip_cleanup: true
+  on:
+    tags: true
